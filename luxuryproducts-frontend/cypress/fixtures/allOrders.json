@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "Name",
+    "infix": "Infix",
+    "last_name": "Last Name",
+    "zipcode": "2408PE",
+    "houseNumber": 24,
+    "notes": "Notes",
+    "totalProducts": 0,
+    "orderDate": "May 24, 2024",
+    "orderLines": [
+      {
+        "id": 1,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "description": "Tom Clancy's Rainbow Six® Siege is an elite, tactical team-based shooter where superior planning and execution triumph.",
+        "price": 15.99,
+        "imgURL": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw63e24d90/images/large/56c494ad88a7e300458b4d5a.jpg",
+        "amount": 6,
+        "specifications": "OS *: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OSProcessor: Intel Core i5-2500K @ 3.3 GHz or better or AMD FX-8120 @ 3.1 Ghz or better\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 670 or AMD Radeon HD 7970",
+        "releaseDate": "1-Dec-2015",
+        "publisher": "Ubisoft",
+        "status": "Delivered",
+        "amountReturned": 0,
+        "reasonForReturn": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Name",
+    "infix": "Infix",
+    "last_name": "Last Name",
+    "zipcode": "2408PE",
+    "houseNumber": 24,
+    "notes": "Notes",
+    "totalProducts": 0,
+    "orderDate": "May 24, 2024",
+    "orderLines": [
+      {
+        "id": 2,
+        "name": "Mortal Kombat 1",
+        "description": "Discover a reborn Mortal Kombat™ Universe created by the Fire God Liu Kang. Mortal Kombat™ 1 ushers in a new era of the iconic franchise with a new fighting system, game modes, and fatalities!",
+        "price": 34.99,
+        "imgURL": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAMOK3cjH0oK89AraaQ_DJQ3EyioLRJxCnq0X2lLPXDisjyn1XOuwGkRLht5b1c7d7G6Uk2w",
+        "amount": 6,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 64-bit\nProcessor: Intel® Core™ i5-8400 | AMD Ryzen™ 5 3600X\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce® GTX 1080 Ti or AMD Radeon™ RX 5700 XT or Intel® Arc™ A770\nDirectX: Version 12\nStorage: 140 GB available space\nAdditional Notes: SSD",
+        "releaseDate": "19 Sep, 2023",
+        "publisher": "Warner Bros. Games",
+        "status": "Delivered",
+        "amountReturned": 0,
+        "reasonForReturn": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Name",
+    "infix": "Infix",
+    "last_name": "Last Name",
+    "zipcode": "2408PE",
+    "houseNumber": 24,
+    "notes": "Notes",
+    "totalProducts": 0,
+    "orderDate": "May 24, 2024",
+    "orderLines": [
+      {
+        "id": 3,
+        "name": "Elden Ring",
+        "description": "THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+        "price": 47.99,
+        "imgURL": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+        "amount": 6,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10/11\nProcessor: INTEL CORE I7-8700K or AMD RYZEN 5 3600X\nMemory: 16 GB RAM\nGraphics: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB",
+        "releaseDate": "25-Feb-2022",
+        "publisher": "FromSoftware Inc., Bandai Namco Entertainment",
+        "status": "Delivered",
+        "amountReturned": 0,
+        "reasonForReturn": null
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Name",
+    "infix": "Infix",
+    "last_name": "Last Name",
+    "zipcode": "2408PE",
+    "houseNumber": 24,
+    "notes": "Notes",
+    "totalProducts": 0,
+    "orderDate": "May 24, 2024",
+    "orderLines": [
+      {
+        "id": 4,
+        "name": "Helldivers 2",
+        "description": "The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter.",
+        "price": 39.99,
+        "imgURL": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0718/60ebb0f1f65149baa3c3ea07b08f8595c17e7759fea79e1c.jpg",
+        "amount": 6,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-9700K or AMD Ryzen 7 3700X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT",
+        "releaseDate": "8-Feb-2024",
+        "publisher": "PlayStation PC LLC",
+        "status": "Delivered",
+        "amountReturned": 0,
+        "reasonForReturn": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Name",
+    "infix": "Infix",
+    "last_name": "Last Name",
+    "zipcode": "2408PE",
+    "houseNumber": 24,
+    "notes": "Notes",
+    "totalProducts": 0,
+    "orderDate": "May 24, 2024",
+    "orderLines": [
+      {
+        "id": 5,
+        "name": "Helldivers 2",
+        "description": "The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter.",
+        "price": 39.99,
+        "imgURL": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0718/60ebb0f1f65149baa3c3ea07b08f8595c17e7759fea79e1c.jpg",
+        "amount": 6,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-9700K or AMD Ryzen 7 3700X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT",
+        "releaseDate": "8-Feb-2024",
+        "publisher": "PlayStation PC LLC",
+        "status": "Delivered",
+        "amountReturned": 0,
+        "reasonForReturn": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Name",
+    "infix": "Infix",
+    "last_name": "Last Name",
+    "zipcode": "2408PE",
+    "houseNumber": 24,
+    "notes": "Notes",
+    "totalProducts": 0,
+    "orderDate": "May 24, 2024",
+    "orderLines": [
+      {
+        "id": 6,
+        "name": "Helldivers 2",
+        "description": "The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter.",
+        "price": 39.99,
+        "imgURL": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0718/60ebb0f1f65149baa3c3ea07b08f8595c17e7759fea79e1c.jpg",
+        "amount": 6,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-9700K or AMD Ryzen 7 3700X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT",
+        "releaseDate": "8-Feb-2024",
+        "publisher": "PlayStation PC LLC",
+        "status": "Delivered",
+        "amountReturned": 0,
+        "reasonForReturn": null
+      }
+    ]
+  }
+]

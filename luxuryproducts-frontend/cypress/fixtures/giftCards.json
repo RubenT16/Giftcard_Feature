@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "code": "TEST123",
+    "balance": 100,
+    "active": true
+  },
+  {
+    "id": 2,
+    "code": "TEST456",
+    "balance": 50,
+    "active": false
+  }
+]

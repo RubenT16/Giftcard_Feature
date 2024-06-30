@@ -1,0 +1,51 @@
+# Angular specific
+.angular/
+node_modules/
+dist/
+out-tsc/
+tmp/
+../.idea/
+target/
+
+# Spring Boot specific
+target/
+*.jar
+*.war
+*.ear
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Spring Boot files
+*.iml
+.idea/
+.vscode/
+*.iws
+.classpath
+.project
+.settings/
+
+# Maven
+.mvn/
+!**/mvn/wrapper/**/mvnw
+!**/mvn/wrapper/**/mvnw.cmd
+!**/mvn/wrapper/**/maven-wrapper.jar
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Application files
+.env
+*.swp
+*~
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

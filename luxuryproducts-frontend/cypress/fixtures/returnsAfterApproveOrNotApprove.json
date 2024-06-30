@@ -1,0 +1,98 @@
+[
+  {
+    "id": 2,
+    "name": "Aidan Verkerk",
+    "infix": "",
+    "last_name": "Verkerk",
+    "returnDate": "May 27, 2024",
+    "status": "Pending",
+    "orderLines": [
+      {
+        "id": 4,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "description": "Tom Clancy's Rainbow Six® Siege is an elite, tactical team-based shooter where superior planning and execution triumph.",
+        "price": 15.99,
+        "imgURL": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw63e24d90/images/large/56c494ad88a7e300458b4d5a.jpg",
+        "amount": 4,
+        "specifications": "OS *: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OSProcessor: Intel Core i5-2500K @ 3.3 GHz or better or AMD FX-8120 @ 3.1 Ghz or better\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 670 or AMD Radeon HD 7970",
+        "releaseDate": "1-Dec-2015",
+        "publisher": "Ubisoft",
+        "status": "Returned (Approval pending)",
+        "amountReturned": 0,
+        "reasonForReturn": "Changed mind"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Aidan Verkerk",
+    "infix": "",
+    "last_name": "Verkerk",
+    "returnDate": "May 27, 2024",
+    "status": "Pending",
+    "orderLines": [
+      {
+        "id": 5,
+        "name": "Elden Ring",
+        "description": "THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+        "price": 47.99,
+        "imgURL": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+        "amount": 1,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10/11\nProcessor: INTEL CORE I7-8700K or AMD RYZEN 5 3600X\nMemory: 16 GB RAM\nGraphics: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB",
+        "releaseDate": "25-Feb-2022",
+        "publisher": "FromSoftware Inc., Bandai Namco Entertainment",
+        "status": "Returned (Approval pending)",
+        "amountReturned": 0,
+        "reasonForReturn": "Changed mind"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Aidan Verkerk",
+    "infix": "",
+    "last_name": "Verkerk",
+    "returnDate": "May 27, 2024",
+    "status": "Pending",
+    "orderLines": [
+      {
+        "id": 6,
+        "name": "Elden Ring",
+        "description": "THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+        "price": 47.99,
+        "imgURL": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+        "amount": 3,
+        "specifications": "Requires a 64-bit processor and operating system\nOS: Windows 10/11\nProcessor: INTEL CORE I7-8700K or AMD RYZEN 5 3600X\nMemory: 16 GB RAM\nGraphics: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB",
+        "releaseDate": "25-Feb-2022",
+        "publisher": "FromSoftware Inc., Bandai Namco Entertainment",
+        "status": "Returned (Approval pending)",
+        "amountReturned": 0,
+        "reasonForReturn": "Other"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Aidan Verkerk",
+    "infix": "",
+    "last_name": "Verkerk",
+    "returnDate": "May 27, 2024",
+    "status": "Processed",
+    "orderLines": [
+      {
+        "id": 3,
+        "name": "Tom Clancy's Rainbow Six Siege",
+        "description": "Tom Clancy's Rainbow Six® Siege is an elite, tactical team-based shooter where superior planning and execution triumph.",
+        "price": 15.99,
+        "imgURL": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw63e24d90/images/large/56c494ad88a7e300458b4d5a.jpg",
+        "amount": 2,
+        "specifications": "OS *: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OSProcessor: Intel Core i5-2500K @ 3.3 GHz or better or AMD FX-8120 @ 3.1 Ghz or better\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 670 or AMD Radeon HD 7970",
+        "releaseDate": "1-Dec-2015",
+        "publisher": "Ubisoft",
+        "status": "Returned (Wrong item sent)",
+        "amountReturned": 0,
+        "reasonForReturn": "Wrong item sent"
+      }
+    ]
+  }
+]

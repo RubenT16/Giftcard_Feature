@@ -1,0 +1,43 @@
+<div class="gift-card-section mt-3">
+  <h5>Gift Cards</h5>
+  <div *ngIf="giftCards && giftCards.length > 0; else noGiftCards">
+    <div *ngFor="let card of giftCards" class="gift-card">
+      <div *ngIf="editingCard?.id !== card.id; else editForm">
+        <div class="card-header">
+          <span class="edit-icon" (click)="startEditing(card)">✎</span>
+        </div>
+        <p><strong>Code:</strong> {{ card.code }}</p>
+        <p><strong>Balance:</strong> {{ card.balance | currency:'EUR'}}</p>
+        <p><strong>Status:</strong> {{ card.active ? 'Active' : 'Inactive' }}</p>
+        <p><strong>User:</strong> {{card.userEmail}}</p>
+
+      </div>
+      <ng-template #editForm>
+        <form *ngIf="editingCard" (ngSubmit)="saveCard()">
+          <div class="form-group">
+            <label for="balance">Balance:</label>
+            <input type="number" [(ngModel)]="editingCard.balance" name="balance" id="balance" class="form-control">
+          </div>
+          <div class="form-group">
+              <label for="code">Code:</label>
+              <input type="text" [(ngModel)]="editingCard.code" name="code" id="code" class="form-control">
+            </div>
+          <div class="form-group">
+            <label for="active">Status:</label>
+            <select [(ngModel)]="editingCard.active" name="active" id="active" class="form-control">
+              <option [ngValue]="true">Active</option>
+              <option [ngValue]="false">Inactive</option>
+            </select>
+          </div>
+          <div class="button-group">
+            <button type="button" (click)="cancelEditing()" class="cancel-btn">Cancel</button>
+            <button type="submit" class="save-btn">Save</button>
+          </div>
+        </form>
+      </ng-template>
+    </div>
+  </div>
+  <ng-template #noGiftCards>
+    <p>You have no gift cards.</p>
+  </ng-template>
+</div>

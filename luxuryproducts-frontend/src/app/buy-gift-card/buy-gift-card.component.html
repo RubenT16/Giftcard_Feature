@@ -1,0 +1,25 @@
+<div class="form-card-container">
+  <div class="form-card">
+    <h2>Buy Gift Card</h2>
+    <form [formGroup]="giftCardForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input id="amount" formControlName="amount" type="number" class="form-control">
+        <div *ngIf="giftCardForm.get('amount')?.invalid && giftCardForm.get('amount')?.touched" class="error-message">
+          Amount must be between 10 and 250 euros.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" class="form-control">
+        <div *ngIf="giftCardForm.get('email')?.invalid && giftCardForm.get('email')?.touched" class="error-message">
+          Valid email is required.
+        </div>
+      </div>
+      <button type="submit" [disabled]="giftCardForm.invalid" class="btn-submit">Buy Gift Card</button>
+    </form>
+    <div *ngIf="message" [ngClass]="{'success-message': messageType === 'success', 'error-message': messageType === 'error'}">
+      {{ message }}
+    </div>
+  </div>
+</div>

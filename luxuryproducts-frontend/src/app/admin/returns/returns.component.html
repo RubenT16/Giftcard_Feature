@@ -1,0 +1,91 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="mb-3">
+        <label for="displaySelector" class="form-label">Display:</label>
+        <select
+          id="displaySelector"
+          class="form-select"
+          (change)="onDisplayChange($event)"
+        >
+          <option value="all">All</option>
+          <option value="notProcessed">Not Processed Returns</option>
+          <option value="processed">Processed Returns</option>
+        </select>
+      </div>
+
+      <div
+        *ngIf="toDisplayReturns && toDisplayReturns.length > 0; else noOrders"
+      >
+        <div *ngFor="let userReturn of toDisplayReturns" class="mb-4">
+          <div class="card">
+            <div class="card-header">Return ID #{{ userReturn.id }}</div>
+            <div class="card-body">
+              <div class="customer-info mb-3">
+                <h5>Customer Information</h5>
+                <p>
+                  <span class="fw-bold">Name:</span> {{ userReturn.name }}
+                  {{ userReturn.last_name }}
+                </p>
+              </div>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="item-column">Item</th>
+                    <th class="reason-column">Reason for Return</th>
+                    <th class="amount-column">Amount</th>
+                    <th class="condition-column">In good condition?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let orderLine of userReturn.orderLines">
+                    <td class="item-column">{{ orderLine.name }}</td>
+                    <td class="reason-column">
+                      {{ orderLine.reasonForReturn }}
+                    </td>
+                    <td class="amount-column">{{ orderLine.amount }}</td>
+                    <td class="condition-column">
+                      <ng-container
+                        *ngIf="
+                          !orderLine.status.includes('pending');
+                          else processed
+                        "
+                      >
+                        Processed
+                      </ng-container>
+                      <ng-template #processed>
+                        <button
+                          class="btn btn-success btn-sm"
+                          (click)="approveCondition(orderLine)"
+                        >
+                          &#10004;
+                        </button>
+                        <button
+                          class="btn btn-danger btn-sm"
+                          (click)="notApproveCondition(orderLine)"
+                        >
+                          &#10008;
+                        </button>
+                      </ng-template>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="order-total">
+                <span class="fw-bold">Total Items:</span>
+                {{ calculateAmountOfItems(userReturn) }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #noOrders>
+        <div class="no-orders-message">
+          <p>No returns found.</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

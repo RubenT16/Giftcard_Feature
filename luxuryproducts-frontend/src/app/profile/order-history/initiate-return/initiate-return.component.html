@@ -1,0 +1,56 @@
+<div class="container mt-4">
+  <h2 class="mb-3">Return Items</h2>
+  <ng-container *ngFor="let orderLine of order.orderLines; let i = index">
+    <div *ngIf="orderLine.status === 'Delivered'" class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ orderLine.name }}</h5>
+        <p class="card-text">Amount Purchased: {{ orderLine.amount }}</p>
+        <label for="returnSelect{{ i }}" class="form-label"
+          >Select quantity to return:</label
+        >
+        <select
+          [(ngModel)]="orderLine.amountReturned"
+          class="form-select"
+          id="returnSelect{{ i }}"
+        >
+          <option [value]="0">0</option>
+          <option
+            *ngFor="let num of getNumbers(orderLine.amount)"
+            [ngValue]="num"
+          >
+            {{ num }}
+          </option>
+        </select>
+        <div *ngIf="orderLine.amountReturned > 0">
+          <label for="reasonSelect{{ i }}" class="form-label mt-3"
+            >Reason for return:</label
+          >
+          <select
+            [(ngModel)]="orderLine.reasonForReturn"
+            class="form-select"
+            id="reasonSelect{{ i }}"
+          >
+            <option value="Defective">Defective</option>
+            <option value="Not as described">Not as Described</option>
+            <option value="Wrong item sent">Wrong Item Sent</option>
+            <option value="Changed mind">Changed Mind</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <div class="text-center mb-4">
+    <p class="card-text" *ngIf="!hasReturnableItems()">
+      Can't submit return if all quantities are 0 and/or reason is not specified
+    </p>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="submitReturns()"
+      [disabled]="!hasReturnableItems()"
+    >
+      Submit Returns
+    </button>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container-fluid bg-light py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+        <img
+          width="500"
+          [src]="product.imgURL"
+          class="img-fluid rounded-start"
+          alt="Product Image"
+        />
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <h5>{{ product.name }}</h5>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price | currency: "EUR" }}</p>
+      </div>
+      <div
+        class="col-md-12 col-lg-3 d-flex align-items-center justify-content-end"
+      >
+        <p>
+          <span class="fw-bold">Stock:</span>
+          <ng-container *ngIf="!editMode; else editTemplate">
+            {{ product.stock }}
+            <button
+              class="btn btn-sm btn-outline-secondary"
+              (click)="toggleEdit()"
+            >
+              Edit
+            </button>
+          </ng-container>
+          <ng-template #editTemplate>
+            <input
+              type="number"
+              class="form-control form-control-sm w-auto d-inline-block"
+              [(ngModel)]="product.stock"
+            />
+            <button class="btn btn-sm btn-success" (click)="save()">
+              Save
+            </button>
+            <button class="btn btn-sm btn-danger" (click)="toggleEdit()">
+              Cancel
+            </button>
+          </ng-template>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />

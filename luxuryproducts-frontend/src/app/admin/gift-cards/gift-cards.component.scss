@@ -1,0 +1,61 @@
+.gift-card-section {
+    width: 100%;
+  
+    .gift-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+  
+      .card-header {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+  
+      .edit-icon {
+        cursor: pointer;
+        font-size: 18px;
+        color: black;
+      }
+  
+      p {
+        margin-bottom: 5px;
+      }
+  
+      .form-group {
+        margin-bottom: 10px;
+      }
+  
+      input, select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+  
+      .button-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+  
+      .save-btn, .cancel-btn {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+  
+      .save-btn {
+        background-color: black;
+        color: white;
+      }
+  
+      .cancel-btn {
+        background-color: transparent;
+        color: black;
+        border: 1px solid #ccc;
+      }
+    }
+  }

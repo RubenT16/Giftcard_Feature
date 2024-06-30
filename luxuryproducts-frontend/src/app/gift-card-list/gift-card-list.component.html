@@ -1,0 +1,9 @@
+<div *ngIf="giftCards">
+    <h2>Available Gift Cards</h2>
+    <ul>
+        <li *ngFor="let card of giftCards">
+            <p>Code: {{ card.code }}</p>
+            <p>Balance: {{ card.balance }}€</p>
+        </li>
+    </ul>
+</div>

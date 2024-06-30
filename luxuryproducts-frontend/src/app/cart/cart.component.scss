@@ -1,0 +1,23 @@
+.btn {
+  background-color: black;
+  border: 1px solid black;
+  font-size: 15px;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.btn.apply-coupon {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-danger, .text-success {
+  position: absolute;
+  width: 100%;
+}
